@@ -17,7 +17,10 @@ helm install ingress-nginx ingress-nginx/ingress-nginx
 
 #6:Pointing Nginx Ingress Loadbalancer in Domain Name provider to Access app using Domain Name
 
-#7: Configure cert manager for Nginx Ingress
+#7: Configure cert manager for Nginx Ingress 
+ helm Installation Documentation:- 
+ https://cert-manager.io/docs/installation/helm/
+ 
  kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.9.1/cert-manager.yaml
 
 #8: Configure cluster Issure 
