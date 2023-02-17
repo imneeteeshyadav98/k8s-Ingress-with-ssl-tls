@@ -32,4 +32,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx
 #10: Deploy certificate 
  kubectl apply -f certificate.yaml s
 
+# Configure one more nginx ingress in same k8s
 
+
+helm install botshot-web-nginx-ingress ingress-nginx/ingress-nginx --namespace botshot-web-nginx-ingress --set controller.ingressClass="botshot-web-nginx-ingress" --set controller.ingressClassResource.name="botshot-web-nginx-ingress" 
